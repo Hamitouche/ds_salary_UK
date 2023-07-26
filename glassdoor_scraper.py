@@ -126,9 +126,9 @@ def fetch_jobs(path, keyword, num_pages):
                print(str(current_page) + ' ' + 'out of' +' '+ str(num_pages) + ' ' + 'pages done')
                current_page += 1
             except NoSuchElementException:
-              print("Scraping terminated before reaching target number of jobs. Needed {}, got {}.".format(num_pages, current_page))
-              break
-            time.sleep(4) 
+               print("Scraping terminated before reaching target number of jobs. Needed {}, got {}.".format(num_pages, current_page))
+               break
+        time.sleep(4) 
     
     driver.close()
 
@@ -148,5 +148,5 @@ def fetch_jobs(path, keyword, num_pages):
     #Export df to a csv file
     df.to_csv('jobs.csv')
 
-PATH = "D:/coding_for_fun/ds_salary_UK/chromedriver.exe"                   
+PATH = "chromedriver.exe"                   
 fetch_jobs(PATH, "Data Engineer", 3)
