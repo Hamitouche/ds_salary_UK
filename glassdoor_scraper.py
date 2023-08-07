@@ -149,4 +149,4 @@ def fetch_jobs(path, keyword, num_pages):
     df.to_csv('jobs.csv')
 
 PATH = "chromedriver.exe"                   
-fetch_jobs(PATH, "Data Engineer", 3)
+fetch_jobs(PATH, "Data Engineer", 20)
