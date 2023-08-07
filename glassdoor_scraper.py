@@ -150,3 +150,4 @@ def fetch_jobs(path, keyword, num_pages):
 
 PATH = "chromedriver.exe"                   
 fetch_jobs(PATH, "Data Engineer", 30)
+
